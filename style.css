@@ -1,0 +1,110 @@
+.main{
+    background-color: rgb(241, 241, 150);
+}
+ul{
+    margin-top: 5px;
+    text-align: right;
+}
+ul li{
+    display: inline;
+    margin-right: 20px;
+    font-size: 20px;
+  
+}
+ul li a{
+    text-decoration: none;
+    color: black;
+}
+ul li a:hover{
+    color: rgb(255, 0, 0);
+}
+
+.recipe {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.biryani {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  width: 60%;
+  margin-left: 260px;
+}
+
+.ingredients, .preparation {
+  width: 45%;
+  padding: 15px;
+  /* border: 1px solid #ccc; */
+  border-radius: 8px;
+  background: #fff3B0;
+}
+
+.ingredients h2, .preparation h2 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color:black;
+}
+
+
+.ingredients ul {
+  list-style: none;
+  padding-left: 0;
+}
+.ingredients li::before {
+  content: ". ";
+  color: black;
+  font-weight: bold;
+}
+.ingredients li {
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: black;
+  display: list-item;
+  text-align: left;
+
+}
+
+
+.preparation ul {
+  list-style: none;        /* remove default numbers */
+  counter-reset: step;     /* create custom counter */
+  padding-left: 0;
+}
+.preparation li {
+  counter-increment: step;
+  margin-bottom: 8px;
+  color: black;
+  line-height: 1.5;
+    display: list-item;
+    text-align: left;
+}
+.preparation li::before {
+  content: counter(step) ") ";   /* 1) 2) 3) */
+  font-weight: bold;
+  color: black;
+}
+.recipe-table {
+  width: 50%;
+  margin: 20px auto; /* center the table */
+  border-collapse: collapse;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
+}
+
+
+
+.recipe-table th {
+  background-color: #FFD580; /* light golden */
+  color: #333;
+  font-size: 18px;
+}
+
+.recipe-table td {
+  background-color: #fff;
+  font-size: 16px;
+  text-align: center;
+  padding: 12px;
+}
